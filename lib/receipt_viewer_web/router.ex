@@ -17,7 +17,9 @@ defmodule RViewerWeb.Router do
     # Use the default browser stack
     pipe_through(:browser)
 
-    get("/", PageController, :index)
+    get("/", DecodeController, :new)
+
+    resources("/decode", DecodeController, singleton: true, only: [:create, :new])
   end
 
   # Other scopes may use custom stacks.

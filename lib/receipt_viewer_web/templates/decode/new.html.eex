@@ -4,7 +4,7 @@
       <div class="form-group">
         <textarea name="receipt" class="form-control" rows="12" autocapitalize="none" autocomplete="off" autofocus="true" required="required" spellcheck="false"></textarea>
       </div>
-      <button type="submit" class="btn btn-primary">Decode</button>
+      <button type="submit" class="btn btn-primary">Decode receipt</button>
     <% end %>
   </div>
 </div>

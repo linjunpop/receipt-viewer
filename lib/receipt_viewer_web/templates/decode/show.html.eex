@@ -1,0 +1,128 @@
+<ul class="list-group">
+  <li class="list-group-item">
+    <h4 class="list-group-item-heading">Application Version</h4>
+    <p class="list-group-item-text">
+      <%= @receipt.application_version %>
+    </p>
+  </li>
+  <li class="list-group-item">
+    <h4 class="list-group-item-heading">Bundle ID</h4>
+    <p class="list-group-item-text">
+      <%= @receipt.bundle_id %>
+    </p>
+  </li>
+  <li class="list-group-item">
+    <h4 class="list-group-item-heading">Creation Date</h4>
+    <p class="list-group-item-text">
+      <%= @receipt.creation_date %>
+    </p>
+  </li>
+  <li class="list-group-item">
+    <h4 class="list-group-item-heading">Environment</h4>
+    <p class="list-group-item-text">
+      <%= @receipt.environment %>
+    </p>
+  </li>
+  <li class="list-group-item">
+    <h4 class="list-group-item-heading">Expiration Date</h4>
+    <p class="list-group-item-text">
+      <%= @receipt.expiration_date || "N/A" %>
+    </p>
+  </li>
+  <li class="list-group-item">
+    <span class="badge">Base 64 encoded</span>
+    <h4 class="list-group-item-heading">Opaque Value</h4>
+    <p class="list-group-item-text">
+      <%= @receipt.opaque_value |> Base.encode64() %>
+    </p>
+  </li>
+  <li class="list-group-item">
+    <h4 class="list-group-item-heading">Original Application Version</h4>
+    <p class="list-group-item-text">
+      <%= @receipt.original_application_version %>
+    </p>
+  </li>
+  <li class="list-group-item">
+    <span class="badge">Base 64 encoded</span>
+    <h4 class="list-group-item-heading">SHA-1 Hash</h4>
+    <p class="list-group-item-text">
+      <%= @receipt.sha1_hash |> Base.encode64() %>
+    </p>
+  </li>
+  <li class="list-group-item list-group-item-info">
+    <h4 class="list-group-item-heading">In-App Purchase Receipts</h4>
+    <p class="list-group-item-text">
+      <%= for {iap_receipt, index} <- Enum.with_index(@receipt.in_apps) do %>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            In-App Purchase Receipt
+            <span class="pull-right badge"><%= index %></span>
+          </div>
+
+          <ul class="list-group">
+            <li class="list-group-item">
+              <h4 class="list-group-item-heading">Cancellation Date</h4>
+              <p class="list-group-item-text">
+                <%= iap_receipt.cancellation_date || "N/A" %>
+              </p>
+            </li>
+            <li class="list-group-item">
+              <h4 class="list-group-item-heading">Expires Date</h4>
+              <p class="list-group-item-text">
+                <%= iap_receipt.expires_date || "N/A" %>
+              </p>
+            </li>
+            <li class="list-group-item">
+              <h4 class="list-group-item-heading">is_in_intro_offer_period</h4>
+              <p class="list-group-item-text">
+                <%= iap_receipt.is_in_intro_offer_period || "N/A" %>
+              </p>
+            </li>
+            <li class="list-group-item">
+              <h4 class="list-group-item-heading">Original Purchase Date</h4>
+              <p class="list-group-item-text">
+                <%= iap_receipt.original_purchase_date %>
+              </p>
+            </li>
+            <li class="list-group-item">
+              <h4 class="list-group-item-heading">Original Transaction ID</h4>
+              <p class="list-group-item-text">
+                <%= iap_receipt.original_transaction_id %>
+              </p>
+            </li>
+            <li class="list-group-item">
+              <h4 class="list-group-item-heading">Product ID</h4>
+              <p class="list-group-item-text">
+                <%= iap_receipt.product_id %>
+              </p>
+            </li>
+            <li class="list-group-item">
+              <h4 class="list-group-item-heading">Purchase Date</h4>
+              <p class="list-group-item-text">
+                <%= iap_receipt.purchase_date %>
+              </p>
+            </li>
+            <li class="list-group-item">
+              <h4 class="list-group-item-heading">Quantity</h4>
+              <p class="list-group-item-text">
+                <%= iap_receipt.quantity %>
+              </p>
+            </li>
+            <li class="list-group-item">
+              <h4 class="list-group-item-heading">Transaction ID</h4>
+              <p class="list-group-item-text">
+                <%= iap_receipt.transaction_id %>
+              </p>
+            </li>
+            <li class="list-group-item">
+              <h4 class="list-group-item-heading">Web Order Line Item ID</h4>
+              <p class="list-group-item-text">
+                <%= iap_receipt.web_order_line_item_id %>
+              </p>
+            </li>
+          </ul>
+        </div>
+      <% end %>
+    </p>
+  </li>
+</ul>
