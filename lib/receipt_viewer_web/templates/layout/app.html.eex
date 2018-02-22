@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="View iOS App receipt's content online">
+    <meta name="author" content="Jun">
 
-    <title>Hello RViewer!</title>
+    <title>ReceiptViewer - View iOS App receipt's content online</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 
@@ -16,7 +16,7 @@
       <nav class="navbar navbar-default">
         <div class="container">
           <div class="navbar-header">
-            <%= link "Receipt Viewer", to: decode_path(@conn, :new), class: "navbar-brand" %>
+            <%= link "ReceiptViewer", to: decode_path(@conn, :new), class: "navbar-brand" %>
           </div>
         </div>
       </nav>
