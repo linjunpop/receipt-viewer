@@ -15,7 +15,7 @@ use Mix.Config
 # which you typically run after static files are built.
 config :receipt_viewer, RViewerWeb.Endpoint,
   load_from_system_env: true,
-  url: [scheme: "https", host: "receipt-viewer.herokuapp.com", port: 443],
+  url: [scheme: "https", host: "receipt-viewer.linjun.me", port: 443],
   cache_static_manifest: "priv/static/cache_manifest.json",
   secret_key_base: Map.fetch!(System.get_env(), "SECRET_KEY_BASE")
 
