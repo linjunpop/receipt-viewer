@@ -1,0 +1,11 @@
+.alert {
+  font-size: 0.8rem;
+}
+
+.alert-info {
+  color: green;
+}
+
+.alert-error {
+  color: red;
+}

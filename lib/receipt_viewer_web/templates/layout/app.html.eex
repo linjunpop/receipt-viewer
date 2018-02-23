@@ -8,25 +8,26 @@
     <meta name="author" content="Jun">
 
     <title>ReceiptViewer - View iOS App receipt's content online</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@0.4.0/modern-normalize.min.css">
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 
   <body>
     <div class="container">
-      <nav class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <%= link "ReceiptViewer", to: decode_path(@conn, :new), class: "navbar-brand" %>
-          </div>
-        </div>
+      <nav>
+        <%= link "", to: decode_path(@conn, :new), class: "logo" %>
       </nav>
 
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
-      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+      <p class="alert alert-error" role="alert"><%= get_flash(@conn, :error) %></p>
 
       <main role="main">
         <%= render @view_module, @view_template, assigns %>
       </main>
+
+      <footer>
+        <p>Made with ❤ by <a href="http://linjun.me">Jun</a></p>
+      </footer>
 
     </div> <!-- /container -->
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>

@@ -1,0 +1,45 @@
+.receipt {
+  width: 100%;
+}
+
+.receipt ul {
+  list-style-type: none;
+}
+
+.receipt ul li {
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-bottom: none;
+}
+.receipt ul li:first-child {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.receipt ul li:last-child {
+  border-bottom: 1px solid black;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.receipt h4 {
+  margin-top: 0;
+  color: #747474;
+}
+
+.receipt span.badge {
+  float: right;
+  background-color: rgb(128, 128, 128);
+  color: rgb(226, 226, 226);
+  padding: 0.3rem;
+  border-radius: 0.25rem;
+}
+
+.receipt .iap {
+  background-color: #ebebeb;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
+.receipt .iap > ul {
+  padding-left: 0;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="170px" height="163px" viewBox="0 0 170 163" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard">
+            <rect id="Rectangle" fill="#000000" x="26" y="25" width="9" height="42"></rect>
+            <rect id="Rectangle" fill="#000000" x="97" y="25" width="9" height="61"></rect>
+            <rect id="Rectangle" fill="#000000" x="131" y="25" width="9" height="76"></rect>
+            <rect id="Rectangle" fill="#000000" x="60" y="25" width="9" height="91"></rect>
+            <g id="Group" transform="translate(89.000000, 105.000000)">
+                <circle id="Oval" fill="#000000" cx="17" cy="17" r="17"></circle>
+                <text id="$" font-family="AvenirNext-Bold, Avenir Next" font-size="24" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="9" y="25">$</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
