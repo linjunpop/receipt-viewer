@@ -8,8 +8,11 @@
     <meta name="author" content="Jun">
 
     <title>ReceiptViewer - View iOS App receipt's content online</title>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@0.4.0/modern-normalize.min.css">
+
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </head>
 
   <body>
@@ -26,10 +29,9 @@
       </main>
 
       <footer>
-        <p>Made with ❤ by <a href="http://linjun.me">Jun</a></p>
+        <p>Made with ❤ by <a href="http://linjun.me" data-turbolinks="false">Jun</a></p>
       </footer>
 
     </div> <!-- /container -->
-    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>
